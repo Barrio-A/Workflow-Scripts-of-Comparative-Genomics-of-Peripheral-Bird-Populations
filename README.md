@@ -33,6 +33,7 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - SAMtools v1.21 *(12 threads)*
 
 [*MAPPING_SCRIPT HERE*](./Mapping-&-Coverage.Depth_LmR.sh)
+
 [*DEPTH.QUANTILES_SCRIPT HERE*](./Depth_Quantiles_LmR_R.txt)
 
 ### 4. Analysis of Next Generation Sequencing Data (ANGSD)
@@ -42,8 +43,9 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - ANGSD v0.941 *(8 threads)*
 
 [*NEGATIVE.REPEATS_COORDINATES_SCRIPT HERE*](./Coordinates_Negative.Repeats_LmR.sh)
-[*ANGSD_SCRIPT_BOTH.POPULATIONS HERE*](./ANGSD_Lm.All.sh)
-[*ANGSD_SCRIPT_ONE-SPECIFIC.POPULATION HERE*](./ANGSD_LmR.sh)
-[*SFS_SCRIPT*](./SFS_LmR.sh)
-[*THETA_SCRIPT*](./Theta_LmR.sh)
-[*GLOBAL.STATISTICS_SCRIPT*](./Global.Statistics_LmR.sh)
+
+[*ANGSD_I_SCRIPT_BOTH.POPULATIONS HERE*](./ANGSD_Lm.All.sh)
+
+[*ANGSD_I_SCRIPT_ONE-SPECIFIC.POPULATION HERE*](./ANGSD_LmR.sh)
+
+[*ANGSD_II_SCRIPT HERE*](./Sfs_Theta_Global.Statistics_LmR.sh)
