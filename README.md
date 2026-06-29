@@ -91,5 +91,5 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 
 [*BCF.TO.VCF_CONVERSION_SCRIPT HERE*](./VCF_Lm.All.sh)
 
-[*DEMOGRAPHIC.INFERENCE_SCRIPT HERE*](./HistoryDemographic.Inference_LmR.sh)
+[*DEMOGRAPHIC.INFERENCE_SCRIPT HERE*](./HistoryDemographic.Inference_Lm.All.sh)
 
