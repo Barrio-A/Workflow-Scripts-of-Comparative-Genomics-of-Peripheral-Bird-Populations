@@ -22,4 +22,6 @@ DownloadRawData_SRATools_LmR.sh
 **First Quality Analysis**
 - FastQC v0.12.1 *(12 threads)*
 
-
+```sh
+Quality_FastQC_1_LmR.sh
+```
