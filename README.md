@@ -13,7 +13,7 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 **Get the RawData, paired-end reads (pair-wise), from the Dataset of Interest (SRR)**
 - SRA Toolkit v3.3.0 *(14 threads)*
 
-[*SCRIPT HERE*](./DownloadRawData_SRATools_LmR.sh)
+[*DOWNLOAD_SCRIPT HERE*](./DownloadRawData_SRATools_LmR.sh)
 
 ### 2. Raw sequencing data processing
 
@@ -22,7 +22,7 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - fastp v0.23.2 *(12 threads)*
 - cutadapt v2.6 *(12 threads)*
 
-[*SCRIPT HERE*](./Filter-Quality_LmR.sh)
+[*FILTERING_SCRIPT HERE*](./Filter-Quality_LmR.sh)
 
 ### 3. Genome Mapping, BAM processing & Depth Quantiles
 
@@ -32,8 +32,8 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - picard v2.18.29 *(12 threads)*
 - SAMtools v1.21 *(12 threads)*
 
-[*SCRIPT HERE*](./Mapping_LmR.sh)
-[*SCRIPT HERE*](./Depth_Quantiles_LmR_R.txt)
+[*MAPPING_SCRIPT HERE*](./Mapping_LmR.sh)
+[*DEPTH.QUANTILES_SCRIPT HERE*](./Depth_Quantiles_LmR_R.txt)
 
 ### 4. Analysis of Next Generation Sequencing Data (ANGSD)
 
@@ -41,4 +41,4 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - bedtools v2.31.1
 - ANGSD v0.941
 
-[*SCRIPT HERE*]
+[*ANGSD_SCRIPT HERE*]
