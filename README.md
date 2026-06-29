@@ -53,16 +53,25 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 
 ### 5. Estimation, Comparison & Visualization of Nucleotide Diversity (π) Between Populations
 
-**Nucleotide Diversity Analyses & Plotting**
+**Nucleotide Diversity Analyses & Plotting. Only Super-Scaffold 'SUPER_1' as example**
 - R v4.3.3
   
-[*NUCLEOTIDE.DIVERSITY_SCRIPT HERE*](./ROH_LmR.sh)
+[*PREPARATION.CSV_FOR_NUCLEOTIDE.DIVERSITY.PLOTS_SCRIPT HERE*](./Windows_pi.Depth.nSites.csv_LmR.sh)
+
+[*CHR._NUCLEOTIDE.DIVERSITY_SCRIPT HERE*](./Mean.pi.per.Chr_LmR.R)
+
+[*WHOLE-GENOME_NUCLEOTIDE.DIVERSITY_SCRIPT HERE*](./Whole-Chr._rapid.pi.Est_LmR.sh)
+
+[*NUCLEOTIDE.DIVERSITY.PLOT_ONE.POPULATION_SCRIPT HERE*](./Mean.pi+pi_LmR.R)
+
+[*NUCLEOTIDE.DIVERSITY.PLOT_TWO.POPULATIONS_SCRIPT HERE*](./Nucleotide-Diversity-&-Mean-pi_LmRvsLmV.R)
+
+[*NUCLEOTIDE.DIVERSITY.DEPTH.SITES.PLOT_TWO.POPULATIONS_SCRIPT HERE*](./Pi+mean.pi+Depth+nSites_LmRvsLmV.R)
 
 ### 6. Identification of Runs of Homozigosity (ROH)
 
 **Identification of invariant regions at a chromosome-level of the genome**
 - ROHan v1.0 *(24 threads)*
-- R v4.3.3
 
 [*ROH_SCRIPT HERE*](./ROH_LmR.sh)
 
@@ -70,16 +79,14 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 
 **Detect potentially candidate regions to be Identity-By-Descent, direct signs of inbreeding, at a chromosome-level**
 - ngsF-HMM v1.1.0 *(2 threads)*
-- R v4.3.3
 
 [*IBD_SCRIPT HERE*](./IBD_LmR.sh)
 
-### 7. Inference of Demographic History with a Sequentially Markovian Coalescent (SMC) Approach:
+### 8. Inference of Demographic History with a Sequentially Markovian Coalescent (SMC) Approach:
 
-**Infer demographic trajectories from a single-individual whole-genoem sequencing data**
+**Infer demographic trajectories from a single-individual whole-genome sequencing data**
 - SMC++ v1.15.2 *(12 threads)*
 - BCFtools v1.22 *(12threads)*
-- R v4.3.3
 
 [*BCF.TO.VCF_CONVERSION_SCRIPT HERE*](./VCF_Lm.All.sh)
 
