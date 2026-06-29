@@ -23,7 +23,7 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - fastp v0.23.2 *(12 threads)*
 - cutadapt v2.6 *(12 threads)*
 
-[*FILTERING_SCRIPT HERE*](./Filter-Quality_LmR.sh)
+[*FILTERING_SCRIPT HERE*](./Filter-&-Quality_LmR.sh)
 
 ### 3. Genome Mapping, BAM processing & Depth Quantiles
 
