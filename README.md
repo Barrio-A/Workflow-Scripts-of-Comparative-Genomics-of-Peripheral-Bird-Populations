@@ -55,18 +55,18 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 ### 5. Identification of Runs of Homozigosity (ROH)
 
 **Identification of invariant regions at a chromosome-level of the genome**
-- ROHan v1.0 *(12 threads)*
+- ROHan v1.0 *(24 threads)*
 - R v4.3.3
 
-[*ROH_SCRIPT HERE*]
+[*ROH_SCRIPT HERE*](./ROH_LmR.sh)
 
 ### 6. Inference of Identity-By-Descent (IBD) Tracts
 
 **Detect potentially candidate regions to be Identity-By-Descent, direct signs of inbreeding, at a chromosome-level**
-- ngsF-HMM v1.1.0 *(12 threads)*
+- ngsF-HMM v1.1.0 *(2 threads)*
 - R v4.3.3
 
-[*IBD_SCRIPT HERE*]
+[*IBD_SCRIPT HERE*](./IBD_LmR.sh)
 
 ### 7. Inference of Demographic History with a Sequentially Markovian Coalescent (SMC) Approach:
 
