@@ -1,5 +1,5 @@
 ---
-# Workflow-Scripts-of-Comparative-Genomics-of-Peripheral-Bird-Populations
+# Workflow Scripts of Comparative Genomics of Peripheral Bird Populations
 Bioinformatic workflows for comparative conservation genomics analyses of peripheral, threatened bird populations versus non-threatened populations from same species. Specifically, computational pipelines for genome-wide diversity (π), inbreeding (ROHs &amp; IBDs) and recent demographic history analyses ( SMC++).
 
 
@@ -32,13 +32,14 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - picard v2.18.29 *(12 threads)*
 - SAMtools v1.21 *(12 threads)*
 
-[*MAPPING_SCRIPT HERE*](./Mapping_LmR.sh)
+[*MAPPING_SCRIPT HERE*](./Mapping-&-Coverage.Depth_LmR.sh)
 [*DEPTH.QUANTILES_SCRIPT HERE*](./Depth_Quantiles_LmR_R.txt)
 
 ### 4. Analysis of Next Generation Sequencing Data (ANGSD)
 
-**ANGSD for diverse Population Genetic Variation Analyses**
+**Data Preparation Processes and ANGSD for diverse Population Genetic Variation Analyses**
 - bedtools v2.31.1
 - ANGSD v0.941
 
+[*NEGATIVE.REPEATS_COORDINATES_SCRIPT HERE*](./Coordinates_Negative.Repeats_LmR.sh)
 [*ANGSD_SCRIPT HERE*]
