@@ -1,6 +1,6 @@
 ---
 # Workflow Scripts of Comparative Genomics of Peripheral Bird Populations
-Bioinformatic workflows for comparative conservation genomics analyses of peripheral, threatened bird populations versus non-threatened populations from same species. Specifically, computational pipelines for genome-wide diversity (π), inbreeding (ROHs &amp; IBDs) and demographic history analyses ( SMC++).
+Bioinformatic workflows for comparative conservation genomics analyses of peripheral, threatened bird populations versus non-threatened populations from same species. Specifically, computational pipelines for genome-wide diversity (π), inbreeding (ROHs &amp; IBDs) and demographic history analyses (SMC++).
 
 
 ## Bioinformatic Workflow
@@ -31,16 +31,18 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - BBMap v38.18 *(12 threads)*
 - picard v2.18.29 *(12 threads)*
 - SAMtools v1.21 *(12 threads)*
+- R v4.3.3
 
-[*MAPPING_SCRIPT HERE*](./Mapping-&-Coverage.Depth_LmR.sh)
+[*MAPPING_DEPTH.COVERAGE_SCRIPT HERE*](./Mapping-&-Coverage.Depth_LmR.sh)
 
-[*DEPTH.QUANTILES_SCRIPT HERE*](./Depth_Quantiles_LmR_R.txt)
+[*DEPTH.QUANTILES_SCRIPT HERE*](./Depth_Quantiles_LmR_.R)
 
 ### 4. Analysis of Next Generation Sequencing Data (ANGSD)
 
-**Data Preparation Processes, ANGSD for diverse Population Genetic Variation Analyses: SFS, Theta's & other Global Statistics**
+**Data Preparation Processes, Diverse Population Genetic Variation Analyses and Estimation of Nucleotide Diversity (π)**
 - bedtools v2.31.1 *(12 threads)*
 - ANGSD v0.941 *(8 threads)*
+- R v4.3.3
 
 [*NEGATIVE.REPEATS_COORDINATES_SCRIPT HERE*](./Coordinates_Negative.Repeats_LmR.sh)
 
@@ -49,3 +51,28 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 [*ANGSD_I_SCRIPT_ONE-SPECIFIC.POPULATION HERE*](./ANGSD_LmR.sh)
 
 [*ANGSD_II_SCRIPT HERE*](./Sfs_Theta_Global.Statistics_LmR.sh)
+
+### 5. Identification of Runs of Homozigosity (ROH)
+
+**Identification of invariant regions at a chromosome-level of the genome**
+- ROHan v1.0 *(12 threads)*
+- R v4.3.3
+
+[*ROH_SCRIPT HERE*]
+
+### 6. Inference of Identity-By-Descent (IBD) Tracts
+
+**Detect potentially candidate regions to be Identity-By-Descent, direct signs of inbreeding, at a chromosome-level**
+- ngsF-HMM v1.1.0 *(12 threads)*
+- R v4.3.3
+
+[*IBD_SCRIPT HERE*]
+
+### 7. Inference of Demographic History with a Sequentially Markovian Coalescent (SMC) Approach:
+
+**Infer demographic trajectories from a single-individual whole-genoem sequencing data**
+- SMC++ v1.15.2 *(12 threads)*
+- R v4.3.3
+
+[SMC++_SCRIPT HERE*]
+
