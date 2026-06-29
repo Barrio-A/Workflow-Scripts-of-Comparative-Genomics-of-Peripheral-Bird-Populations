@@ -75,7 +75,7 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - BCFtools v1.22 *(12threads)*
 - R v4.3.3
 
-[*BCF.TO.VCF_CONVERSION_SCRIPT HERE*](./)
+[*BCF.TO.VCF_CONVERSION_SCRIPT HERE*](./VCF_Lm.All.sh)
 
 [*DEMOGRAPHIC.INFERENCE_SCRIPT HERE*](./HistoryDemographic.Inference_LmR.sh)
 
