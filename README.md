@@ -2,6 +2,7 @@
 # Workflow Scripts of Comparative Genomics of Peripheral Bird Populations
 Bioinformatic workflows for comparative conservation genomics analyses of peripheral, threatened bird populations versus non-threatened populations from same species. Specifically, computational pipelines for genome-wide diversity (π), inbreeding (ROHs &amp; IBDs) and demographic history analyses (SMC++).
 
+<img width="1920" height="1080" alt="ANDREA_WORKFLOW_TFM_1" src="https://github.com/user-attachments/assets/686a1acc-adf8-4d15-98d0-d8e75de117ec" />
 
 ## Bioinformatic Workflow
 It is only shown one of the two populations (LmR) used for comparative assesments, from the two total species used for the project (*Lanius minor*). The analyses followed the general computational pipeline below:
