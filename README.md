@@ -24,12 +24,21 @@ It is only shown one of the two species used for the project (*Lanius minor*). T
 
 [*SCRIPT HERE*](./Filter-Quality_LmR.sh)
 
-### 3. Mapping Clean Data & Depth Quantiles
+### 3. Genome Mapping, BAM processing & Depth Quantiles
 
 **Paired-end read merging, reference indexing, read mapping, duplicate marking/removal, sorting and indexing again, until get the final BAM file**
-- BWA v0.7.16a *(14 threads)*
-- BBMap v38.18 *(14 threads)*
-- picard v2.18.29 *(14 threads)*
-- SAMtools v1.21 *(14 threads)*
+- BWA v0.7.16a *(12 threads)*
+- BBMap v38.18 *(12 threads)*
+- picard v2.18.29 *(12 threads)*
+- SAMtools v1.21 *(12 threads)*
+
+[*SCRIPT HERE*](./Mapping_LmR.sh)
+[*SCRIPT HERE*](./Depth_Quantiles_LmR_R.txt)
+
+### 4. Analysis of Next Generation Sequencing Data (ANGSD)
+
+**ANGSD for diverse Population Genetic Variation Analyses**
+- bedtools v2.31.1
+- ANGSD v0.941
 
 [*SCRIPT HERE*]
