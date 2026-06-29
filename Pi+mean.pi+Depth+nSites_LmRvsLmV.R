@@ -187,7 +187,7 @@ theme(
 print(Plot)
 
 ggsave(
-  filename = "/PATH/Lm_Nucl.Div.Sites.Depth_SUPER_1.png",
+  filename = "Lm_Nucl.Div.Sites.Depth_SUPER_1.png",
   plot = Plot,
   width = 12,
   height = 7,
