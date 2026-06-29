@@ -1,0 +1,48 @@
+args <- commandArgs(trailingOnly = TRUE)
+
+input_file <- args[1]
+output_file_1 <- args[2] #pdf del histograma de depth > 0
+output_file_2 <- args[3] #pdf del histograma de 0 < depth < 300
+
+data <- read.table(input_file, header = FALSE, sep = "\t")
+
+depth <- data[,3]
+depth_1 <- depth[depth > 0]
+depth_2 <- depth_1[depth_1 < 300]
+
+pdf(output_file_1)
+hist(depth_1,
+     main = "Histograma de Depth > 0",
+     xlab = "Depth",
+     ylab = "Frecuencia",
+     col = "firebrick",
+     border = "black")
+dev.off()
+
+pdf(output_file_2)
+hist(depth_2,
+     main = "Histograma de 0 < Depth < 300",
+     xlab = "Depth",
+     ylab = "Frecuencia",
+     col = "firebrick",
+     border = "black")
+dev.off()
+
+args <- commandArgs(trailingOnly = TRUE)
+
+input_file <- args[1]
+output_file1 <- args[2] #Crea un archivo.txt
+output_file2 <- args[3] #Crea un archivo.txt
+
+data <- read.table(input_file, header = FALSE, sep = "\t")
+
+depth <- data[,3]
+depth_1 <- depth[depth > 0]
+depth_2 <- depth_1[depth_1 < 300]
+
+q_1 <- quantile(depth_1, probs=c(0.01, 0.025, 0.05, 0.95, 0.975, 0.99))
+q_2 <- quantile(depth_2, probs=c(0.01, 0.025, 0.05, 0.95, 0.975, 0.99))
+
+write.table(t(q_1), output_file1, quote=FALSE, col.names=TRUE, row.names=FALSE, sep="\t")
+write.table(t(q_2), output_file2, quote=FALSE, col.names=TRUE, row.names=FALSE, sep="\t")
+
