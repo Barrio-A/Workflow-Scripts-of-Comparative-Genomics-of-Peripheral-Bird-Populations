@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pth_home=/PATH/Arreglado
+pth_home=/PATH/DIRECTORY
 pth_angsd=/PATH/angsd
 pth_i=$pth_home
 pth_o=$pth_home/ANGSD_Results
