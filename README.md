@@ -13,9 +13,7 @@ It is only shown one of the two species used for the project (*Lanius minor*). T
 **Get the RawData, paired-end reads (pair-wise), from the Dataset of Interest (SRR)**
 - SRA Toolkit v3.3.0 *(14 threads)*
 
-```sh
-DownloadRawData_SRATools_LmR.sh
-```
+[Ejecutar script](./DownloadRawData_SRATools_LmR.sh)
 
 ### 2. Raw sequencing data processing
 
