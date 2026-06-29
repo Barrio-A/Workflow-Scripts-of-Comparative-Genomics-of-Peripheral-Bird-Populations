@@ -1,6 +1,6 @@
 #!/bin/bash
 
-vcf="/PATH/Lanius_minor.vcf.gz"
+vcf="Lanius_minor.vcf.gz"
 tabix "$vcf"
 
 
@@ -9,14 +9,14 @@ smc++ vcf2smc \
     "$vcf"\
      LmR.smc.gz \
     SUPER_1 \
-    pop1:/PATH/LmR.bam
+    pop1:LmR.bam
 
 smc++ vcf2smc \
     -l 160401690 \
     "$vcf" \
     LmV.smc.gz \
     SUPER_1 \
-    pop2:/PATH/LmV.bam
+    pop2:LmV.bam
 
 
 
@@ -42,15 +42,15 @@ smc++ vcf2smc \
     "$vcf" \
     LmR.LmS.smc.gz \
     SUPER_1 \
-    pop1:/PATH/LmR.bam \
-    pop2:/PATH/LmV.bam
+    pop1:LmR.bam \
+    pop2:LmV.bam
 
 smc++ vcf2smc \
     "$vcf" \
     LmS.LmB.smc.gz \
     SUPER_1 \
-    pop2:/PATH/LmV.bam \
-    pop1:/PATH/LmR.bam
+    pop2:LmV.bam \
+    pop1:LmR.bam
 
 
 
