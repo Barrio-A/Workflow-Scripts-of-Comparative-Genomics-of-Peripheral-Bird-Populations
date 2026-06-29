@@ -1,20 +1,15 @@
 #!/bin/bash
 
-pth_home=/PATH/DIRECTORY
-pth_angsd=/PATH/angsd
-pth_i=$pth_home
-pth_o=$pth_home/ANGSD_Results
 i_name=Lm.bamlist.txt
-o_name=Lm_angsd
-ref=/PATH/bLanMin1.curated_primary.no_mt.scrubbed.fa
+ref=bLanMin1.curated_primary.no_mt.scrubbed.fa
 pth_anc=$ref
-bedfile=/PATH/repeats.Lm.negative_format.SUPER.bed
+bedfile=repeats.Lm.negative_format.SUPER.bed
 threads=8
 
-$pth_angsd/angsd \
+angsd/angsd \
      -GL 2 \
      -doGlf 3 \
-     -out $pth_o/$o_name \
+     -out Lm_angsd \
      -nThreads $threads \
      -doSaf 1 \
      -anc $pth_anc \
@@ -37,4 +32,4 @@ $pth_angsd/angsd \
      -setMinDepth 6 \
      -setMaxDepth 140 \
      -doCounts 1 \
-     -bam /PATH/Lm.bamlist.txt
+     -bam Lm.bamlist.txt
