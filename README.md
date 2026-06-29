@@ -72,7 +72,10 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 
 **Infer demographic trajectories from a single-individual whole-genoem sequencing data**
 - SMC++ v1.15.2 *(12 threads)*
+- BCFtools v1.22 *(12threads)*
 - R v4.3.3
 
-[SMC++_SCRIPT HERE*]
+[*BCF.TO.VCF_CONVERSION_SCRIPT HERE*](./)
+
+[*DEMOGRAPHIC.INFERENCE_SCRIPT HERE*](./HistoryDemographic.Inference_LmR.sh)
 
