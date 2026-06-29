@@ -37,10 +37,13 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 
 ### 4. Analysis of Next Generation Sequencing Data (ANGSD)
 
-**Data Preparation Processes and ANGSD for diverse Population Genetic Variation Analyses**
+**Data Preparation Processes, ANGSD for diverse Population Genetic Variation Analyses: SFS, Theta's & other Global Statistics**
 - bedtools v2.31.1 *(12 threads)*
 - ANGSD v0.941 *(8 threads)*
 
 [*NEGATIVE.REPEATS_COORDINATES_SCRIPT HERE*](./Coordinates_Negative.Repeats_LmR.sh)
 [*ANGSD_SCRIPT_BOTH.POPULATIONS HERE*](./ANGSD_Lm.All.sh)
 [*ANGSD_SCRIPT_ONE-SPECIFIC.POPULATION HERE*](./ANGSD_LmR.sh)
+[*SFS_SCRIPT*](./SFS_LmR.sh)
+[*THETA_SCRIPT*](./Theta_LmR.sh)
+[*GLOBAL.STATISTICS_SCRIPT*](./Global.Statistics_LmR.sh)
