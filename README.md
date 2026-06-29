@@ -14,7 +14,7 @@ It is only shown one of the two species used for the project (*Lanius minor*). T
 - SRA Toolkit v3.3.0 *(14 threads)*
 
 ```sh
-DownloadB10KGPData_SRATools_AfD.sh
+DownloadRawData_SRATools_LmR.sh
 ```
 
 ### 2. Raw sequencing data processing
