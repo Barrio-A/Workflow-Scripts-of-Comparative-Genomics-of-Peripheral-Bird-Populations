@@ -79,7 +79,7 @@ theme(
 print(Plot)
 
 ggsave(
-  filename = "/home/andrea/Desktop/TFM/Lm_Nucl.Div._Chr/Lm_Nucl.Div._SUPER_1.png",
+  filename = "Lm_Nucl.Div._SUPER_1.png",
   plot = Plot,
   width = 12,
   height = 7,
