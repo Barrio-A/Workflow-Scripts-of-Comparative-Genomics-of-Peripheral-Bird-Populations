@@ -39,10 +39,9 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 
 ### 4. Analysis of Next Generation Sequencing Data (ANGSD)
 
-**Data Preparation Processes, Diverse Population Genetic Variation Analyses and Estimation of Nucleotide Diversity (π)**
+**Data Preparation Processes, Diverse Population Genetic Variation Analyses**
 - bedtools v2.31.1 *(12 threads)*
 - ANGSD v0.941 *(8 threads)*
-- R v4.3.3
 
 [*NEGATIVE.REPEATS_COORDINATES_SCRIPT HERE*](./Coordinates_Negative.Repeats_LmR.sh)
 
@@ -52,7 +51,14 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 
 [*ANGSD_II_SCRIPT HERE*](./Sfs_Theta_Global.Statistics_LmR.sh)
 
-### 5. Identification of Runs of Homozigosity (ROH)
+### 5. Estimation, Comparison & Visualization of Nucleotide Diversity (π) Between Populations
+
+**Nucleotide Diversity Analyses & Plotting**
+- R v4.3.3
+  
+[*NUCLEOTIDE.DIVERSITY_SCRIPT HERE*](./ROH_LmR.sh)
+
+### 6. Identification of Runs of Homozigosity (ROH)
 
 **Identification of invariant regions at a chromosome-level of the genome**
 - ROHan v1.0 *(24 threads)*
@@ -60,7 +66,7 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 
 [*ROH_SCRIPT HERE*](./ROH_LmR.sh)
 
-### 6. Inference of Identity-By-Descent (IBD) Tracts
+### 7. Inference of Identity-By-Descent (IBD) Tracts
 
 **Detect potentially candidate regions to be Identity-By-Descent, direct signs of inbreeding, at a chromosome-level**
 - ngsF-HMM v1.1.0 *(2 threads)*
