@@ -6,7 +6,7 @@ pth_anc=$ref
 bedfile=repeats.Lm.negative_format.SUPER.bed
 threads=8
 
-angsd \
+angsd/angsd \
      -GL 2 \
      -doGlf 3 \
      -out Lm_angsd \
