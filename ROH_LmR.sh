@@ -7,5 +7,5 @@ rohan \
     -t 24 \
     --map repeats.Lm.negative_format.SUPER.bed \
     -o LmR.rhomu2e5.1m.rohan \
-    /PATH/bLanMin1.curated_primary.no_mt.scrubbed.fa \
-    /PATH/LmR.bam
+    bLanMin1.curated_primary.no_mt.scrubbed.fa \
+    LmR.bam
