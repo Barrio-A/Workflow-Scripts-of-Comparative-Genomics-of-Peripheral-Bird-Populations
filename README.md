@@ -13,19 +13,13 @@ It is only shown one of the two species used for the project (*Lanius minor*). T
 **Get the RawData, paired-end reads (pair-wise), from the Dataset of Interest (SRR)**
 - SRA Toolkit v3.3.0 *(14 threads)*
 
-#!/bin/bash
-
-fasterq-dump SRR31371052 --split-files --threads 24
-
-gzip SRR31371052*.fastq
-
-cp SRR31371052_1.fastq.gz LminorB10K_1.fastq.gz
-cp SRR31371052_2.fastq.gz LminorB10K_2.fastq.gz
+```sh
+DownloadB10KGPData_SRATools_AfD.sh
+```
 
 ### 2. Raw sequencing data processing
 
 **First Quality Analysis**
 - FastQC v0.12.1 *(12 threads)*
 
-#!/bin/bash
-fastqc LminorB10K_1.fastq.gz LminorB10K_2.fastq.gz 12
+
