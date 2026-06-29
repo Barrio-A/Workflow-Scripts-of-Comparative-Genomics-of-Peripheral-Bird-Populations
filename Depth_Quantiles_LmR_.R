@@ -1,8 +1,9 @@
+# Histograms of Depth (0 & 0 < depth < 300):
 args <- commandArgs(trailingOnly = TRUE)
 
 input_file <- args[1]
-output_file_1 <- args[2] #histograma de depth > 0
-output_file_2 <- args[3] #histograma de 0 < depth < 300
+output_file_1 <- args[2] #histogram of depth > 0
+output_file_2 <- args[3] #histogram of 0 < depth < 300
 
 data <- read.table(input_file, header = FALSE, sep = "\t")
 
@@ -28,6 +29,7 @@ hist(depth_2,
      border = "black")
 dev.off()
 
+# Depth Quantiles from the Depth Distribution:(0 & 0 < depth < 300)
 args <- commandArgs(trailingOnly = TRUE)
 
 input_file <- args[1]
