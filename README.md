@@ -42,4 +42,5 @@ It is only shown one of the two populations (LmR) used for comparative assesment
 - ANGSD v0.941
 
 [*NEGATIVE.REPEATS_COORDINATES_SCRIPT HERE*](./Coordinates_Negative.Repeats_LmR.sh)
-[*ANGSD_SCRIPT HERE*]
+[*ANGSD_SCRIPT_BOTH.POPULATIONS HERE*](./ANGSD_Lm.All.sh)
+[*ANGSD_SCRIPT_ONE-SPECIFIC.POPULATION HERE*](./ANGSD_LmR.sh)
