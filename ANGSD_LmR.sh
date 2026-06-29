@@ -7,7 +7,7 @@ threads=8
 min_depth=6
 max_depth=101
 
-angsd \
+angsd/angsd \
      -GL 2 \
      -out LmR_angsd \
      -nThreads $threads \
