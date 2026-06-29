@@ -4,7 +4,7 @@ Bioinformatic workflows for comparative conservation genomics analyses of periph
 
 
 ## Bioinformatic Workflow
-It is only shown one of the two species used for the project (*Lanius minor*). The analyses followed the general computational pipeline below:
+It is only shown one of the two populations (LmR) used for comparative assesments, from the two total species used for the project (*Lanius minor*). The analyses followed the general computational pipeline below:
 
 ---
 
