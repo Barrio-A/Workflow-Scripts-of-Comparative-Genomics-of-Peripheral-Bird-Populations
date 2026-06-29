@@ -1,8 +1,8 @@
 args <- commandArgs(trailingOnly = TRUE)
 
 input_file <- args[1]
-output_file_1 <- args[2] #pdf del histograma de depth > 0
-output_file_2 <- args[3] #pdf del histograma de 0 < depth < 300
+output_file_1 <- args[2] #histograma de depth > 0
+output_file_2 <- args[3] #histograma de 0 < depth < 300
 
 data <- read.table(input_file, header = FALSE, sep = "\t")
 
@@ -31,8 +31,8 @@ dev.off()
 args <- commandArgs(trailingOnly = TRUE)
 
 input_file <- args[1]
-output_file1 <- args[2] #Crea un archivo.txt
-output_file2 <- args[3] #Crea un archivo.txt
+output_file1 <- args[2] 
+output_file2 <- args[3] 
 
 data <- read.table(input_file, header = FALSE, sep = "\t")
 
