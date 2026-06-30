@@ -46,6 +46,15 @@ END{
     }
 }' LmR_depth.win_1Mb.SUPER.tsv > LmR_depth.binned.csv
 
+awk 'BEGIN{FS=OFS=","}
+NR==1{
+    print $0",bin"
+    next
+}
+{
+    bin=int(($2-1)/1000000)
+    print $0,bin
+}' LmR_pi.nSites.csv > LmR_pi.nSites.binned.csv
 
 awk 'BEGIN{FS=OFS=","}
 
@@ -64,7 +73,7 @@ FNR==1{
     val = (key in depth ? depth[key] : "NA")
     print $0,val
 }
-' LmB_depth.binned.csv LmB_pi.nSites.binned.csv > LmB_pi.nSites.depth.csv
+' LmR_depth.binned.csv LmR_pi.nSites.binned.csv > LmR_pi.nSites.depth.csv
 
 awk -F',' 'BEGIN{OFS=","}
 NR==1{
@@ -80,4 +89,4 @@ NR==1{
         }
     }
     print out
-}' LmB_pi.nSites.depth.csv > LmB_pi.nSites.depth_no.bin.csv
+}' LmR_pi.nSites.depth.csv > LmR_pi.nSites.depth_no.bin.csv
