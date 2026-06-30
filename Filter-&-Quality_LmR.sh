@@ -20,6 +20,7 @@ cutadapt \
 -j 12 \
 -q 20 \
 -m 50 \
+-a INSERT_HERE_OVERREPRESENTED.SEQUENCE \
 -o LminorB10K_1.cutadapt.fastq.gz \
 -p LminorB10K_2.cutadapt.fastq.gz \
 LminorB10K_1.fastp.fastq.gz \
