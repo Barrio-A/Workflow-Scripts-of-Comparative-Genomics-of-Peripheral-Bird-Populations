@@ -8,7 +8,7 @@ min_depth=6
 max_depth=101
 
 angsd/angsd \
-     -GL 2 \
+     -GL 3 \
      -out LmR_angsd \
      -nThreads $threads \
      -doSaf 1 \
